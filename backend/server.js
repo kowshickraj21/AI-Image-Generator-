@@ -2,11 +2,19 @@ const fs = require('fs');
 const express = require('express');
 const app = express();
 const dotenv =  require('dotenv');
+const cors = require('cors');
 
 dotenv.config();
 
-app.get('/request', async (req, res) => {
-        const prompt = "elon musk holding a gun"
+app.use(
+  cors({
+    origin: '*'
+  })
+)
+app.use(express.json());
+
+app.post('/request', async (req, res) => {
+        const { prompt } = req.body;
         const apiKey = process.env.API_KEY
         const response = await fetch('https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image', {
             method: 'POST',
@@ -36,9 +44,10 @@ app.get('/request', async (req, res) => {
           const responseJSON = (await response.json())
           
           responseJSON.artifacts.forEach((image) => {
-            let outImage = Buffer.from(image.base64, 'base64')
-            res.end(outImage)
+           fs.writeFileSync( './output.png',Buffer.from(image.base64, 'base64'));
           })
+          let outImage = fs.readFileSync( './output.png');
+          res.end(outImage); 
           
 })
 
