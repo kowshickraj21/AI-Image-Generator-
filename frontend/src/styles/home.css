@@ -1,0 +1,118 @@
+body{
+    background-image: radial-gradient(rgba(58, 24, 108, 1)1%,rgba(66, 30, 128, 1)10%,rgba(14, 2, 46, 1)60%);
+    color: white;
+    overflow: hidden;
+}
+
+.heading{
+    font-size: 55px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 45%;
+}
+
+.heading::before{
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(183, 74, 254, 1),rgba(113, 61, 244, 1));
+    float: right;
+    position: relative;
+    left: 65%;
+    text-wrap: wrap;
+}
+
+.sub-heading{
+    text-align: center;
+}
+.prompt{
+    display: block;
+    margin: auto;
+    width: 49%;
+    height: 60px;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-size: medium;
+    font-weight: bold;
+}
+.prompt::placeholder{
+    padding-left: 10px;
+    font-size: medium;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.generate{
+    position: relative;
+    float: right;
+    right: 390px;
+    bottom: 55px;
+    width: 120px;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(81, 51, 255, 1);
+    color: white;
+    font-weight: bold;
+}
+.tags-head{
+    margin-left: 400px;
+}
+.tags{
+    display: flex;
+    position: relative;
+    float: right;
+    flex-wrap: wrap;
+    width: 35%;
+    bottom: 75px;
+    right: 400px
+}
+.tags p{
+    padding: 5px;
+    padding-left:10px;
+    padding-right: 10px ;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.next{
+    width: 55px;
+    height: 50px;
+    position: absolute;
+    left: 48%;
+    bottom: 50px;
+    animation: float 1s linear infinite;
+}
+
+@keyframes float{
+0%{
+    transform: translateY(10px);
+}
+50%{
+    transform: translatey(0px);
+}
+100%{
+    transform: translateY(10px);
+}
+}
+
+.tags::after{
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(183, 74, 254, 1),rgba(113, 61, 244, 1));
+    float: right;
+    position: relative;
+    right: 205%;
+    text-wrap: wrap;
+}
+.image{
+    height: 100px;
+}

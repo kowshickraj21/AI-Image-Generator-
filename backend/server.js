@@ -40,15 +40,15 @@ app.post('/request', async (req, res) => {
             res.send(`Non-200 response: ${await response.text()}`)
           }
           
-          
-          const responseJSON = (await response.json())
-          
-          responseJSON.artifacts.forEach((image) => {
-           fs.writeFileSync( './output.png',Buffer.from(image.base64, 'base64'));
-          })
-          let outImage = fs.readFileSync( './output.png');
-          res.end(outImage); 
-          
+          const responseJSON = await response.json();
+          const imageData = Buffer.from(responseJSON.artifacts[0].base64, 'base64');
+    
+    res.writeHead(200, {
+      'Content-Type': 'image/png',
+      'Content-Length': imageData.length,
+    });
+    
+    res.end(imageData);
 })
 
 app.listen(5500,() => console.log('listening on port 5500'));

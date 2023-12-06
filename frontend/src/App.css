@@ -1,0 +1,5 @@
+.colored{
+    background: linear-gradient(to bottom right,rgba(183, 74, 254, 1),rgba(113, 61, 244, 1));
+    background-clip: text;
+    color: transparent;
+}
