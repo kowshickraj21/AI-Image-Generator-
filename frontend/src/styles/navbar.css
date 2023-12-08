@@ -1,5 +1,7 @@
 .navbar {
     background-color: transparent;
+    position: sticky;
+    top: 0;
 }
 .nav-items{
     display: flex;
@@ -19,6 +21,7 @@
     padding: 10px;
     font-size:x-large;
     font-weight:900;
+    position: sticky;
 }
 
 li{

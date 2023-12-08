@@ -1,12 +1,12 @@
 import './App.css';
-import { Navbar, Home }from './components/route';
+import { Navbar, Home, Scroller }from './components/route';
 
 function App() {
   return (
     <>
     <Navbar />
     <Home />
-     
+    <Scroller />
     </>
   );
 }
