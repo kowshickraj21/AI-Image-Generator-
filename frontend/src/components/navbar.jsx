@@ -1,9 +1,11 @@
 import React from 'react'
 import '../styles/navbar.css'
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+
   return (
-    <section className='navbar'>
+    <section className='navbar' onClick={props.scroll}>
     <div className='nav-items'>
     <p className='logo colored'>Vincent.AI</p>
       <ul className='nav-list'>

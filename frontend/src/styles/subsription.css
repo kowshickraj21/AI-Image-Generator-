@@ -1,0 +1,52 @@
+.sub-title{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+}
+.sub-text{
+    text-align: center;
+    margin-top: -20px;
+    font-size: small;
+}
+.sub-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sub-cards{
+    width: 300px;
+    background-color: rgba(24, 22, 48, 1);
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+.sub-plan{
+    text-align: center;
+    font-weight: 900;
+}
+.sub-price{
+    text-align: center;
+}
+.sub-price span{
+    font-size: 32px;
+    font-weight: 900;
+}
+.sub-button{
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 150px;
+    border: none;
+    color: white;
+    background-color: rgba(122, 66, 240, 1);
+    border-radius: 15px;
+}
+.sub-details{
+    height: 175px;
+}
+.sub-specs{
+    background-color: rgba(18, 16, 38, 1);
+    height: 225px;
+    border-radius: 0px 0px 25px 25px;
+}

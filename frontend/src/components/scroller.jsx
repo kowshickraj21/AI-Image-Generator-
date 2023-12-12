@@ -8,7 +8,13 @@ const Scroller = () => {
   
   const [lefthover,setLefthover] = useState({img: images.left});
   const [righthover,setRighthover] = useState({img: images.right}); 
-  const [slider,slide1,slide2,slide3,slide4,slide5] = useRef();
+  const slider = useRef();
+  const slide1 = useRef();
+  const slide2 = useRef();
+  const slide3 = useRef();
+  const slide4 = useRef();
+  const slide5 = useRef();
+
 
   function useIsVisible(ref){
     const [inpage,setInpage] = useState(false);

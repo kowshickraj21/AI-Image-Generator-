@@ -1,0 +1,36 @@
+.footer{
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(18, 16, 38, 1);
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+.footer-logo{
+    margin-left: 100px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight:900;
+    position: sticky;
+}
+ul{
+    list-style-type: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+.footer-list ul li{
+    padding: 20px;
+    font-size: 14px;
+    padding-left: 40px;
+}
+.footer-list ul .list-heading{
+    font-size: 20px;
+}

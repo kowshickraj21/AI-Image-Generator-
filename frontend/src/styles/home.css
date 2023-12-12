@@ -1,5 +1,7 @@
 body{
     background-image: radial-gradient(rgba(58, 24, 108, 1)1%,rgba(66, 30, 128, 1)10%,rgba(14, 2, 46, 1)60%);
+    background-repeat: repeat;
+    height: 150vh;
     color: white;
     overflow-x: clip;
 }
@@ -56,6 +58,7 @@ body{
     background-color: rgba(81, 51, 255, 1);
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 .tags-head{
     margin-left: 400px;
@@ -83,10 +86,8 @@ body{
 .next{
     width: 55px;
     height: 50px;
-    position: absolute;
-    left: 48%;
-    bottom: 50px;
     animation: float 1s linear infinite;
+    margin-bottom: 200px;
 }
 
 @keyframes float{
@@ -113,6 +114,17 @@ body{
     right: 205%;
     text-wrap: wrap;
 }
-.image{
-    height: 100px;
+.search{
+    position: sticky;
+    top: 40%;
+    z-index: 1;
+}
+.hide {
+    opacity:0;
+}
+.next-box{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
