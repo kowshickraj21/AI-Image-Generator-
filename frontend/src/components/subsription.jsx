@@ -1,9 +1,10 @@
 import React from 'react'
 import '../styles/subsription.css';
+import { TiTick } from "react-icons/ti";
 
 const Subsription = () => {
   return (
-    <>
+    <div id='subsription'>
       <h2 className='sub-title'>Purchase a <span className='colored'>Subsription</span></h2>
       <p className='sub-text'>Choose a plan that works for you</p>
       <div className='sub-container'>
@@ -14,7 +15,11 @@ const Subsription = () => {
             <button className='sub-button'>Subscribe</button>
             </div>
             <div className='sub-specs'>
-
+            <ul>
+                <li><TiTick className='tick' /> 100 Renders</li>
+                <li><TiTick className='tick' /> 1080P Quality</li>
+                <li><TiTick className='tick' /> Download pictures</li>
+              </ul>
             </div>
         </div>
         <div className='sub-cards'>
@@ -24,7 +29,11 @@ const Subsription = () => {
             <button className='sub-button'>Subscribe</button>
             </div>
             <div className='sub-specs'>
-
+            <ul>
+                <li><TiTick className='tick' /> 100 Renders</li>
+                <li><TiTick className='tick' /> 4K Quality</li>
+                <li><TiTick className='tick' /> Download pictures</li>
+              </ul>
             </div>
         </div>
         <div className='sub-cards'>
@@ -34,11 +43,15 @@ const Subsription = () => {
             <button className='sub-button'>Subscribe</button>
             </div>
             <div className='sub-specs'>
-
+            <ul>
+                <li><TiTick className='tick' /> Unlimited Renders</li>
+                <li><TiTick className='tick' /> 4K Quality</li>
+                <li><TiTick className='tick' /> Download pictures</li>
+              </ul>
             </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

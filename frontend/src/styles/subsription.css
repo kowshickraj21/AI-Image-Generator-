@@ -41,6 +41,7 @@
     color: white;
     background-color: rgba(122, 66, 240, 1);
     border-radius: 15px;
+    cursor: pointer;
 }
 .sub-details{
     height: 175px;
@@ -49,4 +50,13 @@
     background-color: rgba(18, 16, 38, 1);
     height: 225px;
     border-radius: 0px 0px 25px 25px;
+}
+.sub-specs li{
+    padding: 10px;
+}
+.sub-specs li:hover{
+    text-decoration: none;
+}
+.tick{
+    color: rgba(81, 51, 255, 1);
 }

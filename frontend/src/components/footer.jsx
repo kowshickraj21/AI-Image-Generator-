@@ -10,26 +10,26 @@ const Footer = () => {
       <ul>
         <li className='list-heading'>Pages</li>
         <li>About</li>
-        <li>Features</li>
+        <li><a href="https://platform.stability.ai/docs/getting-started" target='_blank'>Documentation</a></li>
         <li>Pricing</li>
       </ul>
       <ul>
         <li className='list-heading'>Learn</li>
-        <li>About</li>
-        <li>Features</li>
-        <li>Pricing</li>
+        <li>Courses</li>
+        <li>Blogs</li>
+        <li>Training</li>
       </ul>
       <ul>
         <li className='list-heading'>Terms & Policies</li>
-        <li>About</li>
-        <li>Features</li>
-        <li>Pricing</li>
+        <li>Terms</li>
+        <li>Policies</li>
+        <li>Documents</li>
       </ul>
       <ul>
         <li className='list-heading'>Contact Us</li>
-        <li>About</li>
-        <li>Features</li>
-        <li>Pricing</li>
+        <li>Email</li>
+        <li>Phone</li>
+        <li>Patreon</li>
       </ul>
       </div>
       </footer>

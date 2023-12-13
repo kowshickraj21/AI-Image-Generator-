@@ -87,7 +87,7 @@ body{
     width: 55px;
     height: 50px;
     animation: float 1s linear infinite;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 @keyframes float{
@@ -127,4 +127,13 @@ body{
     margin: auto;
     display: flex;
     justify-content: center;
+}
+.warning{
+    text-align: center;
+    margin-left: -250px;
+    color: rgba(255, 5, 5, 1);
+
+}
+.hide{
+    display: none;
 }

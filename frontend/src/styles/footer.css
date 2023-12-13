@@ -34,3 +34,6 @@ ul{
 .footer-list ul .list-heading{
     font-size: 20px;
 }
+.footer-list ul .list-heading:hover{
+    text-decoration: none;
+}

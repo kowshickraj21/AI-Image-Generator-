@@ -16,7 +16,7 @@ function App() {
     <Home />
     <Scroller />
     <Review />
-    <Subsription />
+    <Subsription id='subsription'/>
     <Footer />
     </>
   );

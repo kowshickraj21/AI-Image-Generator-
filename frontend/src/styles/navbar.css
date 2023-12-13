@@ -25,6 +25,9 @@
 li{
     padding: 20px;
 }
+li:hover{
+    text-decoration: underline;
+}
 .sign-up{
     background-color:transparent;
     width: 100px;
@@ -33,5 +36,5 @@ li{
     margin-top: -5px;
     color: white;
     border-color: white;
-    
+    cursor: pointer;
 }
