@@ -29,6 +29,7 @@ body{
     align-items: center;
     font-size: 15px;
     margin-bottom: 100px;
+    cursor: pointer;
 }
 .download-icon{
     font-size: 20px;
@@ -47,4 +48,10 @@ body{
 100%{
     transform: rotate(360deg);
 }
+}
+.download:disabled{
+    opacity: 0.5;
+}
+.download:active{
+    transform: translatey(2px);
 }

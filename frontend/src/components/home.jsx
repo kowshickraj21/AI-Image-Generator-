@@ -10,6 +10,7 @@ const Home = () => {
     const [warning, setWarning] = useState(false);
     const [photo,setPhoto] = useState("");
     const [generate, setGenerate] = useState(false);
+    const [loading, setLoading] = useState(false);
     const target = useRef();
 
     const {scrollY} = useScroll({
@@ -21,6 +22,7 @@ const Home = () => {
     const opacity = useTransform(scrollY,[0 , 200],[1 , 0]);
 
     const getAPI = async() => {
+      setLoading(true);
       const res = await fetch('http://localhost:5500/request',{
         method: 'POST',
         headers:{
@@ -31,8 +33,8 @@ const Home = () => {
 
       const imageBlob = await res.blob(); 
     const imageUrl = URL.createObjectURL(imageBlob);
+    setLoading(false);
     setPhoto(imageUrl);
-      
     }  
 
   function handleSubmit() {
@@ -68,7 +70,7 @@ const Home = () => {
       <img className='next' src={next} alt="Next Page"/>
       </motion.div>
     </div>
-     {generate ? <Generator photo = {photo} />:null}
+     {generate ? <Generator photo = {photo} loading = {loading}/>:null}
     </>
   )
 }

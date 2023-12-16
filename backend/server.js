@@ -1,3 +1,4 @@
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const dotenv =  require('dotenv');
@@ -40,6 +41,7 @@ app.post('/request', async (req, res) => {
           
           const responseJSON = await response.json();
           const imageData = Buffer.from(responseJSON.artifacts[0].base64, 'base64');
+          fs.writeFileSync(`./output.png`,imageData);
     
     res.writeHead(200, {
       'Content-Type': 'image/png',
@@ -48,5 +50,7 @@ app.post('/request', async (req, res) => {
     
     res.end(imageData);
 })
-
+app.get('/download', (req,res) => {
+  res.download('output.png');
+})
 app.listen(5500,() => console.log('listening on port 5500'));
