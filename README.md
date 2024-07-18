@@ -1,6 +1,9 @@
+
 # AI Image Generator
 
 Welcome to the AI Image Generator project! This repository documents my journey in learning and implementing an AI-based image generation system using the MERN stack and Stability AI API.
+
+
 ![image](https://github.com/kowshickraj21/AI-Image-Generator-/assets/134122443/766d8833-0c66-44e9-8a28-46d9086e83a1)
 
 
